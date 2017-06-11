@@ -22,8 +22,9 @@ public class DetectActivity extends AppCompatActivity {
         PackageManager pm=getPackageManager();
         try {
             PackageInfo packageInfo=pm.getPackageInfo(packagename,PackageManager.GET_ACTIVITIES);
+            Log.d("Activity:", String.valueOf(packageInfo));
         } catch (PackageManager.NameNotFoundException e) {
         }
-        //Log.d("Activity:",)
+
     }
 }
